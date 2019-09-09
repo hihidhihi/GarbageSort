@@ -32,7 +32,7 @@
 
 1. 开发需要准备相关的 IDE和  JDK8 开发环境 , 前端开发 `uni-app` 需要 下载 [Hbuilder](https://www.dcloud.io/hbuilderx.html) ,后端开发 需要下载 `Eclipse` 或` IDEA`。
 2. 其中的 语音识别和图像识别 功能使用百度智能云平台服务，需要注册登录拥有自己的应用 (有5万次调用 api 的免费使用量)，在 后端 `afterend` 的 `uniapp-api` 当中的配置文件里面需要进行配置 `appid`、`apikey`、`secretkey`。
-3. 数据库准备，创建一个 名称为 `garbageSort` 的数据库，把数据库文件进行导入进去。
+3. 数据库准备，创建一个 名称为 `garbageSort` 的数据库，把跟目录下 `garbagesort.sql`数据库文件进行导入进去即可。
 4. 后端启动：第一步、在 `afterend` 目录下找到 `uniapp-ap`i 模块，把配置文件 `application.yml.example` 的 example 后缀去掉，命名为 `application.yml。第二步、在 application.yml` 中配置好 数据库相关信息 和 上述 百度请求 api 管理的配置信息即可。 第三步、运行 `UniappApiApplication` ，启动后端服务，可以访问 http://localhost:8899/wx/doc.html 查看接文档
 5. 前端启动：在 Hbuilder 中打开目录 `frontend` ，在运行菜单中 点击 `运行到小程序模拟器` —> `微信开发者工具`,或者 使用 微信开发者工具 打开  `forntend` -> `unpackage` -> `dis`t -> `dev` -> `mp-weixin`,即可运行微信小程序。（二次开发的时候在 Hbuilder 中修改文件，保存后可以到微信开发者工具看预览效果）
 
