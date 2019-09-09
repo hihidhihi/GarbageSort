@@ -9,6 +9,8 @@
 <img src="https://images.gitee.com/uploads/images/2019/0730/130939_1e21447e_1277461.jpeg" width="300"  align=center />
 
 
+#### 部分预览图，详情请扫描上方小程序码体验
+
 
 | 首页 | 分类页 | 分类详情 | 搜索页 |
 | :--------: | :--------:| :--: |:--:|
@@ -18,7 +20,7 @@
 | :--------: | :--------:| :--: |:--:|
 | <img src="https://images.gitee.com/uploads/images/2019/0730/125349_348ed5a1_1277461.png" width="300"  align=center />|<img src="https://images.gitee.com/uploads/images/2019/0730/125325_0eac19a1_1277461.png" width="300"  align=center />|<img src="https://images.gitee.com/uploads/images/2019/0730/125333_20a7ed64_1277461.png" width="300"  align=center />|<img src="https://images.gitee.com/uploads/images/2019/0730/125341_350f0101_1277461.png" width="300"  align=center />|
 
-#### 软件架构
+#### 介绍
 前端：微信小程序 采用 [uni-app](https://uniapp.dcloud.io/) 开发框架，`uni-app` 是一个使用 [Vue.js](https://vuejs.org/) 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、H5、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉）等多个平台。
 
 后端：采用 SpringBoot 2 构建后端服务，才  Swagger2 构建 Restful风格接口文档，数据库采用 Mysql ,使用 [Mybatis-Plus](https://mybatis.plus/) 做数据访问层。
@@ -45,12 +47,11 @@
 |       swagger2       |时间选择器|     2.8.0      |https://swagger.io/|
 | swagger-bootstrap-ui |swagger 增强UI实现|     1.8.8      |https://github.com/xiaoymin/Swagger-Bootstrap-UI|
 
+#### 有收获可以请作者喝咖啡哟
+If the project is very helpful to you, you can buy the author a cup of coffee.
+如果这个项目对您有帮助，请作者喝杯咖啡吧。☕
 
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+|支付宝      |    微信|
+| :--------: | :--------:|
+| <img src="https://images.gitee.com/uploads/images/2019/0909/165504_f02dc52b_1277461.jpeg " width="300"  align=center />|
+<img src="https://images.gitee.com/uploads/images/2019/0909/165444_ab4377b4_1277461.jpeg " width="300"  align=center />|
