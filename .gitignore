@@ -31,4 +31,4 @@ build/
 .vscode/
 
 ### 自定义
-application.yml
+*/application.yml
