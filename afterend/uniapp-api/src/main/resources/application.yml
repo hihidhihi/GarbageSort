@@ -1,0 +1,48 @@
+server:
+  port: 8899
+  servlet:
+    context-path: /wx
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/test1?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
+#    username: root
+#    password: root
+    url: jdbc:mysql://111.230.72.174:3306/garbagesort?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: (xdpo#eW_9aE
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: cn.lxsir.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+
+# 文件路径管理
+upload:
+  image:
+    path: /opt/myservice/filepath/image/
+#    path: /Users/luoxiang/testpath/image/   # linux or mac
+#    path: E:/testpath/image/                 # windows
+  record:
+    path: /opt/myservice/filepath/record/
+#    path: /Users/luoxiang/testpath/record/  # linux or mac
+#    path: E:/testpath/record/   # windows
+  excel:
+    path: /opt/myservice/filepath/excel/
+#    path: E:/testpath/excel/
+
+# 百度请求api 管理
+baidu:
+  appid: 16712997
+  apikey: K6AwxsocrKICA1CC8mj91uGf
+  secretkey: lbFjMwCl9ROr72C1yFu3jgVAs36WDAz0
