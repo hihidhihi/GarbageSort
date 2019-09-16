@@ -9,7 +9,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.7.0",
 	"appid": "wx11660ded6d0bc968",
-	"projectname": "mp-weixin",
+	"projectname": "garbageSort",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {

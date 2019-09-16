@@ -1,9 +1,13 @@
 
-.share-popup.data-v-1856778f {
+.button-view.data-v-1856778f{
 	position: fixed;
 	z-index: 999;
 	bottom: 20rpx;
 	right: 10rpx;
+}
+.share-popup.data-v-1856778f {
+	position: fixed;
+	z-index: 999;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;

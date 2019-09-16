@@ -1,5 +1,8 @@
 <template>
 	<view class="content">
+		<view >
+			<ad unit-id="adunit-060249bea9401e5c"></ad>
+		</view>
 		<view class="nav">
 			<view class="nav-left">
 				<scroll-view scroll-y>
@@ -11,6 +14,9 @@
 				</scroll-view>
 			</view>
 			<view class="nav-right">
+				<!-- <view >
+					<ad unit-id="adunit-060249bea9401e5c"></ad>
+				</view> -->
 				<scroll-view scroll-y :style="'height:'+height+'px'" scroll-with-animation>
 					<view class="view-img">
 						<view>
@@ -131,6 +137,27 @@
 			console.log(getApp().globalData.typeid)
 		},
 		methods: {
+			insertAd() {
+				// 在页面中定义插屏广告
+				let interstitialAd = null
+			
+				// 在页面onLoad回调事件中创建插屏广告实例
+				if (wx.createInterstitialAd) {
+					interstitialAd = wx.createInterstitialAd({
+						adUnitId: 'adunit-c9a12748b3ed91fa'
+					})
+					interstitialAd.onLoad(() => {})
+					interstitialAd.onError((err) => {})
+					interstitialAd.onClose(() => {})
+				}
+			
+				// 在适合的场景显示插屏广告
+				if (interstitialAd) {
+					interstitialAd.show().catch((err) => {
+						console.error(err)
+					})
+				}
+			},
 			showDetailGarbage(item) {
 				this.detailShowObject = {
 					garbageType: item.garbageType,

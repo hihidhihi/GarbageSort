@@ -44,6 +44,12 @@
 
 
 
+
+
+
+
+
+
 {
   components: {
     myPopup: myPopup,
@@ -141,6 +147,27 @@
     console.log(getApp().globalData.typeid);
   },
   methods: {
+    insertAd: function insertAd() {
+      // 在页面中定义插屏广告
+      var interstitialAd = null;
+
+      // 在页面onLoad回调事件中创建插屏广告实例
+      if (wx.createInterstitialAd) {
+        interstitialAd = wx.createInterstitialAd({
+          adUnitId: 'adunit-c9a12748b3ed91fa' });
+
+        interstitialAd.onLoad(function () {});
+        interstitialAd.onError(function (err) {});
+        interstitialAd.onClose(function () {});
+      }
+
+      // 在适合的场景显示插屏广告
+      if (interstitialAd) {
+        interstitialAd.show().catch(function (err) {
+          console.error(err);
+        });
+      }
+    },
     showDetailGarbage: function showDetailGarbage(item) {
       this.detailShowObject = {
         garbageType: item.garbageType,

@@ -12,8 +12,7 @@
 						<view v-else-if="detail.garbageType==3" class="text-margin-left garbage-huishou-item"> 可回收物</view>
 						<view v-else-if="detail.garbageType==4" class="text-margin-left garbage-youhai-item"> 有害垃圾</view>
 					</view>
-					<view v-if="detail.remark!=null && detail.remark!=undefined" 
-					:class="detail.garbageType==1?'garbage-gan-item':detail.garbageType==2?'garbage-shi-item':detail.garbageType==3?'garbage-huishou-item':'garbage-youhai-item'"
+					<view v-if="detail.remark!=null && detail.remark!=undefined" :class="detail.garbageType==1?'garbage-gan-item':detail.garbageType==2?'garbage-shi-item':detail.garbageType==3?'garbage-huishou-item':'garbage-youhai-item'"
 					 class="inner-text">
 						{{detail.remark}}
 					</view>
@@ -30,10 +29,14 @@
 						<image v-else-if="detail.garbageType==2" class="show-img-shi" src="../../../static/classify/style-shi.jpg"></image>
 						<image v-else-if="detail.garbageType==3" class="show-img-huishou" src="../../../static/classify/style-huishou.jpg"></image>
 						<image v-else-if="detail.garbageType==4" class="show-img" src="../../../static/classify/style-youhai.jpg"></image>
-
+						<view>
+							<ad unit-id="adunit-060249bea9401e5c"></ad>
+						</view>
 					</view>
 				</view>
+
 			</view>
+
 		</view>
 	</view>
 </template>

@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<!-- <view class="title">挑战赛-结果</view> -->
-		<view class="">
+		<view class="" style="margin-bottom: 20upx;">
 			<view class="">
 				<uni-steps :mydata="[
 					{title: '破坏者'}, 
@@ -84,6 +84,12 @@
 					<button class="goonButton" type="primary" open-type="share">考考别人</button>
 				</view>
 			</view>
+		</view>
+		<!-- <view  >
+			<ad unit-id="adunit-19c9c625b0b4a546" ad-type="video" ad-theme="white"></ad>
+		</view> -->
+		<view >
+			<ad unit-id="adunit-060249bea9401e5c"></ad>
 		</view>
 		<levelPopup :show="popupShow" @hidePopup="hidePopup" :level="level" />
 		<share />
@@ -200,6 +206,7 @@
 			console.log(option); //打印出上个页面传递的参数。
 			console.log(option.score); //打印出上个页面传递的参数。
 			console.log(option.list); //打印出上个页面传递的参数。
+			this.insertAd();
 			this.score = option.score
 			this.list = JSON.parse(option.list);
 			if (this.score <= 1) {
@@ -217,6 +224,27 @@
 			this.popupShow = true;
 		},
 		methods: {
+			insertAd() {
+				// 在页面中定义插屏广告
+				let interstitialAd = null
+			
+				// 在页面onLoad回调事件中创建插屏广告实例
+				if (wx.createInterstitialAd) {
+					interstitialAd = wx.createInterstitialAd({
+						adUnitId: 'adunit-c9a12748b3ed91fa'
+					})
+					interstitialAd.onLoad(() => {})
+					interstitialAd.onError((err) => {})
+					interstitialAd.onClose(() => {})
+				}
+			
+				// 在适合的场景显示插屏广告
+				if (interstitialAd) {
+					interstitialAd.show().catch((err) => {
+						console.error(err)
+					})
+				}
+			},
 			hidePopup() {
 				this.popupShow = false;
 			},

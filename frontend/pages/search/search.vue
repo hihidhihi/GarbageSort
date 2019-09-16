@@ -33,6 +33,9 @@
 						<image src="/static/HM-search/back.png"></image>
 					</view>
 				</view>
+				<view>
+					<ad unit-id="adunit-060249bea9401e5c"></ad>
+				</view>
 			</scroll-view>
 			<scroll-view class="keyword-box" v-show="!isShowKeywordList" scroll-y>
 				<view class="keyword-block" v-if="oldKeywordList.length>0">
@@ -67,6 +70,13 @@
 						<view>当前搜热门搜索已隐藏</view>
 					</view>
 				</view>
+				<view>
+					<ad unit-id="adunit-060249bea9401e5c"></ad>
+				</view>
+				<!-- <view  >
+					<ad unit-id="adunit-19c9c625b0b4a546" ad-type="video" ad-theme="white"></ad>
+				</view> -->
+
 			</scroll-view>
 		</view>
 		<!-- popup start -->

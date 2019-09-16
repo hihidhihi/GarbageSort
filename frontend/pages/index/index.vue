@@ -1,4 +1,24 @@
 <template>
+	<!-- 
+	*
+	* 广告：
+	* 	index.vue :
+	* 		1、视频 广告
+	* 	search.vue :
+	* 		2、搜索下拉 —— banner 广告
+	* 		3、搜索主页 —— banner 广告
+	* 	muPopue.vue :
+	* 		4、banner 广告
+	* 	challenge.vue :
+	* 		5、视频广告
+	* 	challengeResult.vue :
+	* 		6、插屏 广告
+	* 		7、banner 广告
+	* 	type.vue :
+	* 		8、banner 广告
+	* 	
+	* 
+	*  -->
 	<view>
 		<view v-if="false">
 			<swiper :indicator-dots="true" :autoplay="true" :circular="true">
@@ -9,12 +29,27 @@
 				</swiper-item>
 			</swiper>
 		</view>
-		
+
 		<view>
 			<swiper :indicator-dots="true" :autoplay="true" :circular="true">
-				<swiper-item class="swiper-flex" >
-					<view  class="swiper-item" style="background-color: antiquewhite;">
-						<image class="swiper-img" src="../../static/classify/no_garbage.png"></image>
+				<!-- <swiper-item class="swiper-flex">
+					<view class="swiper-item swiper-img" style="background-color: antiquewhite;">
+						<ad unit-id="adunit-060249bea9401e5c"></ad>
+					</view>
+				</swiper-item> -->
+				<swiper-item class="swiper-flex">
+					<view class="swiper-item" style="background-color: antiquewhite;">
+						<image class="swiper-img" src="https://pic.yupoo.com/felixluo/0681f6d5/67bb9dbc.png"></image>
+					</view>
+				</swiper-item>
+				<!-- <swiper-item class="swiper-flex">
+					<view class="swiper-item" >
+						<ad unit-id="adunit-060249bea9401e5c"></ad>
+					</view>
+				</swiper-item> -->
+				<swiper-item class="swiper-flex">
+					<view  >
+						<ad unit-id="adunit-19c9c625b0b4a546" ad-type="video" ad-theme="white"></ad>
 					</view>
 				</swiper-item>
 			</swiper>
@@ -67,7 +102,6 @@
 					<image class="main-img" src="../../static/icos/ico-4.jpg"></image>
 				</view>
 			</view>
-
 		</view>
 		<!-- popup start -->
 		<view class="">
@@ -88,6 +122,9 @@
 			</uni-popup>
 		</view>
 		<!-- popup end -->
+		<!-- <view >
+			<ad unit-id="adunit-060249bea9401e5c"></ad>
+		</view> -->
 		<share />
 	</view>
 </template>
@@ -166,6 +203,8 @@
 			this.randomTip = this.simpleTips[Math.round(Math.random() * 20)];
 		},
 		onLoad() {
+			
+			
 			let me = this;
 			console.log("typeid:" + getApp().globalData.typeid) // 'test'
 
@@ -396,7 +435,7 @@
 					}
 				});
 			}
-			
+
 		}
 	}
 </script>

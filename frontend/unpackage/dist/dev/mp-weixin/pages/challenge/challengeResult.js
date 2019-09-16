@@ -104,6 +104,12 @@
 
 
 
+
+
+
+
+
+
 {
   data: function data() {
     return {
@@ -210,6 +216,7 @@
     console.log(option); //打印出上个页面传递的参数。
     console.log(option.score); //打印出上个页面传递的参数。
     console.log(option.list); //打印出上个页面传递的参数。
+    this.insertAd();
     this.score = option.score;
     this.list = JSON.parse(option.list);
     if (this.score <= 1) {
@@ -227,6 +234,27 @@
     this.popupShow = true;
   },
   methods: {
+    insertAd: function insertAd() {
+      // 在页面中定义插屏广告
+      var interstitialAd = null;
+
+      // 在页面onLoad回调事件中创建插屏广告实例
+      if (wx.createInterstitialAd) {
+        interstitialAd = wx.createInterstitialAd({
+          adUnitId: 'adunit-c9a12748b3ed91fa' });
+
+        interstitialAd.onLoad(function () {});
+        interstitialAd.onError(function (err) {});
+        interstitialAd.onClose(function () {});
+      }
+
+      // 在适合的场景显示插屏广告
+      if (interstitialAd) {
+        interstitialAd.show().catch(function (err) {
+          console.error(err);
+        });
+      }
+    },
     hidePopup: function hidePopup() {
       this.popupShow = false;
     },

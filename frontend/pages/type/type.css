@@ -1,4 +1,9 @@
+.fixed-ad{
+	position: fixed;
+	z-index: 999;
+}
 .nav {
+	margin-top: 10upx;
 	display: flex;
 	width: 100%;
 }

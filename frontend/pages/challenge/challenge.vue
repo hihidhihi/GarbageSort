@@ -44,6 +44,9 @@
 					/ 10
 				</view>
 			</view>
+			<view  >
+				<ad unit-id="adunit-19c9c625b0b4a546" ad-type="video" ad-theme="white"></ad>
+			</view>
 		</view>
 
 		<share />

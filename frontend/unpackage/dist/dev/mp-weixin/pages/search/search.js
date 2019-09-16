@@ -137,6 +137,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 var recorderManager = uni.getRecorderManager();
 var innerAudioContext = uni.createInnerAudioContext();
 

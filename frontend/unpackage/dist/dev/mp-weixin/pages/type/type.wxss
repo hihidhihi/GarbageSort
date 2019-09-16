@@ -1,4 +1,9 @@
+.fixed-ad{
+	position: fixed;
+	z-index: 999;
+}
 .nav {
+	margin-top: 10rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -53,7 +58,6 @@
 	background-color: rgb(229, 49, 34);
 	color: #FFFFFF;
 }
-
 /* boder */
 .garbage-gan-border {
 	border-left: 10rpx solid rgb(44, 43, 39);
@@ -71,7 +75,6 @@
 	width: 200rpx;
 	height: 200rpx;
 }
-
 /* 右边 的样式 */
 .nav-right {
 	width: 70%;
@@ -115,7 +118,6 @@
 .content {
 	width: 100%;
 }
-
 /* 右边展示的图片 */
 .view-img{
 	display: -webkit-box;

@@ -107,6 +107,43 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var recorderManager = uni.getRecorderManager();
 var innerAudioContext = uni.createInnerAudioContext();
 
@@ -176,6 +213,8 @@ innerAudioContext.autoplay = true;var _default =
     this.randomTip = this.simpleTips[Math.round(Math.random() * 20)];
   },
   onLoad: function onLoad() {
+
+
     var me = this;
     console.log("typeid:" + getApp().globalData.typeid); // 'test'
 

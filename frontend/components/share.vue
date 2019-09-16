@@ -1,18 +1,22 @@
 <template>
 	<view>
+
 		<view class="share-popup">
-			<button class="text-img" open-type="share">
-				<view class="buttom-view">
-					<image class="share-img" src="../static/icos/share.png" mode=""></image>
-					<view class="text">分享</view>
-				</view>
-			</button>
-			<button class="text-img" open-type="contact">
-				<view class="buttom-view">
-					<image class="share-img" src="../static/icos/service.png" mode=""></image>
-					<view class="text">客服</view>
-				</view>
-			</button>
+			
+			<view class="button-view">
+				<button class="text-img" open-type="share">
+					<view class="buttom-view">
+						<image class="share-img" src="../static/icos/share.png" mode=""></image>
+						<view class="text">分享</view>
+					</view>
+				</button>
+				<button class="text-img" open-type="contact">
+					<view class="buttom-view">
+						<image class="share-img" src="../static/icos/service.png" mode=""></image>
+						<view class="text">客服</view>
+					</view>
+				</button>
+			</view>
 		</view>
 	</view>
 </template>
@@ -29,11 +33,15 @@
 </script>
 
 <style scoped>
-	.share-popup {
+	.button-view{
 		position: fixed;
 		z-index: 999;
 		bottom: 20upx;
 		right: 10upx;
+	}
+	.share-popup {
+		position: fixed;
+		z-index: 999;
 		display: flex;
 		flex-direction: column;
 	}

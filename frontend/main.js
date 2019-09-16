@@ -6,11 +6,11 @@ Vue.config.productionTip = false
 // prod 
 // Vue.prototype.serverUrl="https://felix.picp.vip/wx"
 // dev
-Vue.prototype.serverUrl="http://localhost:8899/wx"
+// Vue.prototype.serverUrl="http://localhost:8899/wx"
 
 
 // prod 
-// Vue.prototype.serverUrl="https://www.lxsir.cn/wx/uniapp"
+Vue.prototype.serverUrl="https://www.lxsir.cn/wx/uniapp"
 
 App.mpType = 'app'
 
