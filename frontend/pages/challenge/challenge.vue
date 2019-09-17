@@ -49,7 +49,7 @@
 			</view>
 		</view>
 
-		<share />
+		<!-- <share /> -->
 	</view>
 </template>
 

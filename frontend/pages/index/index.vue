@@ -49,7 +49,7 @@
 				</swiper-item> -->
 				<swiper-item class="swiper-flex">
 					<view  >
-						<ad unit-id="adunit-19c9c625b0b4a546" ad-type="video" ad-theme="white"></ad>
+						<ad unit-id="adunit-060249bea9401e5c"></ad>
 					</view>
 				</swiper-item>
 			</swiper>
