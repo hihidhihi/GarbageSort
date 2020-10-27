@@ -6,10 +6,6 @@
 
   // api接口请求地址
   // window.SITE_CONFIG['baseUrl'] = 'http://demo.open.renren.io/renren-fast-server';
-<<<<<<< HEAD
-=======
-//   window.SITE_CONFIG['baseUrl'] = 'http://localhost:8080/renren-fast';
->>>>>>> c7e7277b3f87955e6adc7e6bb2d2f769b4499da5
   window.SITE_CONFIG['baseUrl'] = 'http://felix.uicp.io/renren-fast';
 
   // cdn地址 = 域名 + 版本号
