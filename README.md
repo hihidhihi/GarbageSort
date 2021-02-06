@@ -6,9 +6,9 @@
 
 觉得还不错的话，点个 star 以示鼓励吧，如有问题请进 QQ 交流群讨论：737798561 或者可以加我微信好友。
 
-<img src="https://images.gitee.com/uploads/images/2019/0730/130939_1e21447e_1277461.jpeg" width="300"  align=center />
+<!-- <img src="https://images.gitee.com/uploads/images/2019/0730/130939_1e21447e_1277461.jpeg" width="300"  align=center /> -->
 
-<img src="https://images.gitee.com/uploads/images/2019/0927/141027_4b404d3b_1277461.jpeg" width="300"  align=center />
+<!-- <img src="https://images.gitee.com/uploads/images/2019/0927/141027_4b404d3b_1277461.jpeg" width="300"  align=center /> -->
 
 
 #### 部分预览图，详情请扫描上方小程序码体验
