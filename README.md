@@ -1,10 +1,10 @@
-# 垃圾识别精灵 — 微信小程序
+# 垃圾识别工具箱 — 微信小程序
 
 #### 介绍
 
-这是一款个人开发的微信小程序，集文字查询、语音识别、拍照识别其垃圾分类的小工具，可以使用微信扫码下方二维码立即体验哦。
+这是一款个人开发的微信小程序，集文字查询、语音识别、拍照识别其垃圾分类的小工具，可供个人学习或用于毕业设计，简单易上手进行二次开发，可以使用微信扫码下方二维码立即体验。
 
-觉得还不错的话，点个 star 以示鼓励吧，如有问题请进 QQ 交流群讨论：737798561 或者可以加我微信好友。
+觉得还不错的话，帮忙点个` star` 鼓励一下吧，如有问题请进 QQ 交流群讨论：737798561（免费群） 或者可以加我微信好友（记得备注：gitee），邀请你进内测付费群，提供部署安装视频和相关文档，遇到问题可直接咨询解答，如有二次开发的需求可与我联系。
 
  <img src="https://images.gitee.com/uploads/images/2021/0608/162505_9f56cb01_1277461.png" width="300"  align=center />  <img src="https://images.gitee.com/uploads/images/2021/0608/162757_77ee5f33_1277461.png" width="300"  align=center /> 
 
@@ -65,3 +65,7 @@ If the project is very helpful to you, you can buy the author a cup of coffee.
 |支付宝      |    微信|
 | :--------: | :--------:|
 | <img src="https://images.gitee.com/uploads/images/2019/0909/165504_f02dc52b_1277461.jpeg " width="300"  align=center />|<img src="https://images.gitee.com/uploads/images/2019/0909/165444_ab4377b4_1277461.jpeg " width="300"  align=center />|
+
+
+
+PS：基于Apache License 2协议开源友好，使用、参考、转载请保留出处，严禁将项目直接打包出售。
