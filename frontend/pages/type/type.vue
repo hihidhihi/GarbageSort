@@ -6,21 +6,19 @@
 		<view class="nav">
 			<view class="nav-left">
 				<scroll-view scroll-y>
-					<view @tap="selectClassify(item.index)" class="nav-left-item" v-for="(item,index) in garbageSort" :class="item.active?item.class:item.classborder"
-					 :key='index'>
+					<view @tap="selectClassify(item.index)" class="nav-left-item" v-for="(item,index) in garbageSort" :class="item.active?item.class:item.classborder":key='index'>
 						{{item.name}}
 					</view>
-
 				</scroll-view>
 			</view>
 			<view class="nav-right">
 				<!-- <view >
 					<ad unit-id="adunit-060249bea9401e5c"></ad>
 				</view> -->
-				<scroll-view scroll-y :style="'height:'+height+'px'" scroll-with-animation>
+				<scroll-view scroll-x :style="'height:'+height+'px'" scroll-with-animation>
 					<view class="view-img">
 						<view>
-							<image v-if="index!=null" class="show-img" :src="'../../static/showimg/style1-'+index+'.jpg'"></image>
+							<image v-if="index!=null" class="show-img" :src="url+'/static/showimg/style1-'+index+'.jpg'"></image>
 						</view>
 					</view>
 					<view @tap="showDetailGarbage(item)" class="nav-right-item" v-for="(item,i) in currentDetail" :key="i" :class="i%2==0?'style1':''">
@@ -28,6 +26,7 @@
 					</view>
 				</scroll-view>
 			</view>
+			
 		</view>
 		<view class="">
 			<my-popup :show="detailPopupShow" :detail="detailShowObject" @hideMypopup="hideMypopup"></my-popup>
@@ -39,6 +38,7 @@
 <script>
 	import myPopup from "@/components/myPopup.vue"
 	import share from "@/components/share.vue"
+	import { url } from "@/global/data.js"
 
 	export default {
 		components: {
@@ -51,6 +51,7 @@
 				index: null,
 				detailPopupShow: false,
 				detailShowObject: {},
+				url:url,
 				// detailPopupShow: true,
 				// detailShowObject: {
 				// 	keyword: "纸巾",

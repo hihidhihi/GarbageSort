@@ -39,7 +39,7 @@ public class AsrMain {
     private final String FILENAME = "16k_test.pcm";
 
     // 文件格式, 只支持pcm/wav/amr
-    private final String FORMAT ="m4a";
+    private final String FORMAT ="pcm";
 
 
     private String CUID = appid+APP_KEY+SECRET_KEY;

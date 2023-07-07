@@ -4,18 +4,20 @@
 			"path": "pages/index/index",
 			"style": {}
 		},
-		{
-			"path": "pages/challenge/challengeResult",
-			"style": {}
-		},
+	
 		{
 			"path": "pages/search/search",
 			"style": {}
 		},
 		{
-			"path": "pages/challenge/challenge",
+			"path": "pages/login/login",
 			"style": {
-				"navigationBarTitleText":"环保守卫者挑战赛"
+				"navigationBarTitleText":"资讯",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": true
+					}
+				}
 			}
 		},
 		
@@ -81,8 +83,8 @@
 				"selectedIconPath": "static/tabBar/typeSelected.png"
 			},
 			{
-				"pagePath": "pages/challenge/challenge",
-				"text": "挑战赛",
+				"pagePath": "pages/login/login",
+				"text": "资讯",
 				"iconPath": "static/tabBar/challenge.png",
 				"selectedIconPath": "static/tabBar/challengeSelected.png"
 			}

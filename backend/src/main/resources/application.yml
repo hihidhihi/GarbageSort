@@ -5,16 +5,16 @@ server:
 
 # 百度请求api 管理
 baidu:
-  appid:  # 这儿配置你的 appid
-  apikey: # 这儿配置你的 appkey
-  secretkey: # 这儿配置你的 secretkey
+  appid: 35695204 # 这儿配置你的 appid
+  apikey: EVqNUsQzad5RGMz8f0nlkuar # 这儿配置你的 appkey
+  secretkey: tli24qu2ONTWVR4TpbO0GxUXdvSKMd9A # 这儿配置你的 secretkey
 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.84.3.239:3306/garbagesort?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/garbagesort?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
     username: root  # 配置数据库用户
-    password: 123456  # 配置数据库密码
+    password: 1  # 配置数据库密码
 #    url: jdbc:mysql://localhost:3306/garbagesort?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
 #    username: root  # 配置数据库用户
 #    password: root  # 配置数据库密码
@@ -36,15 +36,15 @@ mybatis-plus:
 # 文件路径管理
 upload:
   image:
-    path: /opt/myservice/filepath/image/
+#    path: /opt/myservice/filepath/image/
 #    path: /Users/luoxiang/testpath/image/    # linux or mac
-#    path: E:/testpath/image/                 # windows
+    path: E:/testpath/image/                 # windows
   record:
-    path: /opt/myservice/filepath/record/
+#    path: /opt/myservice/filepath/record/
 #    path: /Users/luoxiang/testpath/record/   # linux or mac
-#    path: E:/testpath/record/   # windows
+    path: E:/testpath/record/   # windows
   excel:
-    path: /opt/myservice/filepath/excel/
-#    path: E:/testpath/excel/
+#    path: /opt/myservice/filepath/excel/
+    path: E:/testpath/excel/
 
 

@@ -1,24 +1,4 @@
 <template>
-	<!-- 
-	*
-	* 广告：
-	* 	index.vue :
-	* 		1、视频 广告
-	* 	search.vue :
-	* 		2、搜索下拉 —— banner 广告
-	* 		3、搜索主页 —— banner 广告
-	* 	muPopue.vue :
-	* 		4、banner 广告
-	* 	challenge.vue :
-	* 		5、视频广告
-	* 	challengeResult.vue :
-	* 		6、插屏 广告
-	* 		7、banner 广告
-	* 	type.vue :
-	* 		8、banner 广告
-	* 	
-	* 
-	*  -->
 	<view>
 		<view v-if="false">
 			<swiper :indicator-dots="true" :autoplay="true" :circular="true">
@@ -32,32 +12,56 @@
 
 		<view>
 			<swiper :indicator-dots="true" :autoplay="true" :circular="true">
-				<!-- <swiper-item class="swiper-flex">
-					<view class="swiper-item swiper-img" style="background-color: antiquewhite;">
-						<ad unit-id="adunit-060249bea9401e5c"></ad>
-					</view>
-				</swiper-item> -->
 				<swiper-item class="swiper-flex">
 					<view class="swiper-item" style="background-color: antiquewhite;">
-						<image class="swiper-img" src="https://pic.yupoo.com/felixluo/0681f6d5/67bb9dbc.png"></image>
+						<image class="swiper-img" :src="url+'/static/picture/lb-1.jpg'"></image>
 					</view>
 				</swiper-item>
-				<!-- <swiper-item class="swiper-flex">
-					<view class="swiper-item" >
-						<ad unit-id="adunit-060249bea9401e5c"></ad>
-					</view>
-				</swiper-item> -->
 				<swiper-item class="swiper-flex">
-					<view  >
-						<ad unit-id="adunit-060249bea9401e5c"></ad>
+					<view>
+						<image class="swiper-img" :src="url+'/static/picture/lb-2.jpg'"></image>
+					</view>
+				</swiper-item>
+				<swiper-item class="swiper-flex">
+					<view>
+						<image class="swiper-img" :src="url+'/static/picture/lb-3.jpg'"></image>
+					</view>
+				</swiper-item>
+				<swiper-item class="swiper-flex">
+					<view>
+						<image class="swiper-img" :src="url+'/static/picture/lb-4.jpg'"></image>
 					</view>
 				</swiper-item>
 			</swiper>
 		</view>
 
 		<!-- <view class="search-box"> -->
+		
+		<view class="">
+			<view class="simpleTips">
+				{{randomTip}}
+			</view>
+		</view>
+		<view class="main-show-classify">
+			<view class="main-classify">
+				<view @click="switchTabToClassify(1)">
+					<image class="main-img" :src="url+'/static/icos/glj.jpg'"></image>
+				</view>
+				<view @click="switchTabToClassify(2)">
+					<image class="main-img" :src="url+'/static/icos/slj.jpg'"></image>
+				</view>
+			</view>
+			<view class="main-classify">
+				<view @click="switchTabToClassify(3)">
+					<image class="main-img" :src="url+'/static/icos/khsw.jpg'"></image>
+				</view>
+				<view @click="switchTabToClassify(4)">
+					<image class="main-img" :src="url+'/static/icos/yhlj.jpg'"></image>
+				</view>
+			</view>
+		</view>
 		<view class="form-view">
-			<view class="tip-text">你知道 [{{randOneObj.garbageName}}] 属于哪种类型的垃圾吗? </view>
+			<!--<view class="tip-text">你知道 [{{randOneObj.garbageName}}] 属于哪种类型的垃圾吗? </view>-->
 			<form @submit="formSubmit" @reset="formReset" class="form-form">
 				<view class="input-view">
 					<view @click="takePhoto2" class="input-view-item input-view-camera">
@@ -73,35 +77,6 @@
 					<view @tap="searchKeyword" class=" font-search">查询</view>
 				</view>
 			</form>
-		</view>
-		<view v-show="true">
-			<view class="">
-				<uni-notice-bar show-icon="false" color="#999" backgroundColor="rgb(242,242,242)" text="提示:本查询系统就供参考,具体分类要求以属地专业管理部门为准">
-				</uni-notice-bar>
-			</view>
-		</view>
-		<view class="">
-			<view class="simpleTips">
-				{{randomTip}}
-			</view>
-		</view>
-		<view class="main-show-classify">
-			<view class="main-classify">
-				<view @click="switchTabToClassify(1)">
-					<image class="main-img" src="../../static/icos/ico-1.jpg"></image>
-				</view>
-				<view @click="switchTabToClassify(2)">
-					<image class="main-img" src="../../static/icos/ico-2.jpg"></image>
-				</view>
-			</view>
-			<view class="main-classify">
-				<view @click="switchTabToClassify(3)">
-					<image class="main-img" src="../../static/icos/ico-3.jpg"></image>
-				</view>
-				<view @click="switchTabToClassify(4)">
-					<image class="main-img" src="../../static/icos/ico-4.jpg"></image>
-				</view>
-			</view>
 		</view>
 		<!-- popup start -->
 		<view class="">
@@ -134,6 +109,7 @@
 	import uniIcon from "../../components/uni-icon/uni-icon.vue"
 	import uniPopup from "@/components/uni-popup/uni-popup.vue"
 	import share from "@/components/share.vue"
+	import { url } from "@/global/data.js"
 	const recorderManager = uni.getRecorderManager();
 	const innerAudioContext = uni.createInnerAudioContext();
 
@@ -158,8 +134,13 @@
 				timeoutTiming: false,
 				maxTime: 5000,
 				frame: 50,
-
-				swiper: [], // 幻灯片 swiper 数据
+				url:url,
+			
+				swiper: [{
+					index :1,
+					imageUrl: '../../static/picture/lb-1',
+				}
+				], // 幻灯片 swiper 数据
 				isShowKeywordList: false,
 				keywordList: [],
 				randOneObj: {

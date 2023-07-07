@@ -394,7 +394,13 @@
 			recording() {
 				let me = this;
 				// console.log('录音开始');
-				recorderManager.start();
+				const options = {
+				      sampleRate:16000,
+				      numberOfChannels:1,
+				      encodeBitRate:32000,
+				      format:'aac',
+				}
+				recorderManager.start(options);
 				// 画图
 				// let angle = -0.5;
 				// let context = uni.createCanvasContext('canvas');
