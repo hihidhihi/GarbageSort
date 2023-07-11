@@ -1,5 +1,7 @@
 <template>
-	<view>
+	<view class="main">
+		
+		
 		<view v-if="false">
 			<swiper :indicator-dots="true" :autoplay="true" :circular="true">
 				<swiper-item class="swiper-flex" v-for="(item,index) in swiper" :key="index">
@@ -9,11 +11,12 @@
 				</swiper-item>
 			</swiper>
 		</view>
-
+		
+		
 		<view>
 			<swiper :indicator-dots="true" :autoplay="true" :circular="true">
 				<swiper-item class="swiper-flex">
-					<view class="swiper-item" style="background-color: antiquewhite;">
+					<view class="swiper-flex" >
 						<image class="swiper-img" :src="url+'/static/picture/lb-1.jpg'"></image>
 					</view>
 				</swiper-item>
@@ -35,13 +38,14 @@
 			</swiper>
 		</view>
 
-		<!-- <view class="search-box"> -->
 		
 		<view class="">
 			<view class="simpleTips">
 				{{randomTip}}
 			</view>
 		</view>
+		
+		
 		<view class="main-show-classify">
 			<view class="main-classify">
 				<view @click="switchTabToClassify(1)">
@@ -50,8 +54,6 @@
 				<view @click="switchTabToClassify(2)">
 					<image class="main-img" :src="url+'/static/icos/slj.jpg'"></image>
 				</view>
-			</view>
-			<view class="main-classify">
 				<view @click="switchTabToClassify(3)">
 					<image class="main-img" :src="url+'/static/icos/khsw.jpg'"></image>
 				</view>
@@ -60,47 +62,21 @@
 				</view>
 			</view>
 		</view>
-		<view class="form-view">
-			<!--<view class="tip-text">你知道 [{{randOneObj.garbageName}}] 属于哪种类型的垃圾吗? </view>-->
-			<form @submit="formSubmit" @reset="formReset" class="form-form">
-				<view class="input-view">
-					<view @click="takePhoto2" class="input-view-item input-view-camera">
-						<image class="search-img" src="../../static/icos/camera.png"></image>
-					</view>
-					<view @click="readyRecord2" class="input-view-item input-view-speech">
-						<image class="search-img" src="../../static/icos/record.png"></image>
-					</view>
-					<view class="input-view-item input-view-search">
-						<input confirm-type="search" @confirm="searchKeyword" @search="searchKeyword" v-model="keyword" id="inputid"
-						 class="input-search" name="input" placeholder="输入搜索关键词" />
-					</view>
-					<view @tap="searchKeyword" class=" font-search">查询</view>
-				</view>
-			</form>
+		
+		
+		<view class="input-view">
+			<view @click="readyRecord2()" class="input-view-item input-view-speech">
+				<image class="search-img1" src="../../static/icos/yysb.png"></image>
+			</view>
+			
+			<view @click="takePhoto2()" class="input-view-item input-view-camera">
+				<image class="search-img2" src="../../static/icos/pzsb.png"></image>
+			</view>
+			
+			<view @click="gotoSearch()" class="input-view-item input-view-search">
+				<image class="search-img3" src="../../static/icos/srcx.png"></image>
+			</view>
 		</view>
-		<!-- popup start -->
-		<view class="">
-			<uni-popup :show="popupShow" position="bottom" @hidePopup="hidePopup">
-				<view class="view-popup">
-					<view class="recording-title">按住 说话</view>
-					<!-- 此处可放置倒计时，可根据需要自行添加 -->
-					<!-- <div class="recording-time"> 
-			{{seconds}} : {{ms}}
-		</div> -->
-					<view class="recording-box">
-						<canvas id="canvas" canvas-id="canvas">
-							<view class="recording-button" @touchstart="start" @touchend="end"></view>
-						</canvas>
-					</view>
-					<!-- <button type="primary" @click="playVoice">播放</button> -->
-				</view>
-			</uni-popup>
-		</view>
-		<!-- popup end -->
-		<!-- <view >
-			<ad unit-id="adunit-060249bea9401e5c"></ad>
-		</view> -->
-		<share />
 	</view>
 </template>
 
@@ -135,7 +111,6 @@
 				maxTime: 5000,
 				frame: 50,
 				url:url,
-			
 				swiper: [{
 					index :1,
 					imageUrl: '../../static/picture/lb-1',

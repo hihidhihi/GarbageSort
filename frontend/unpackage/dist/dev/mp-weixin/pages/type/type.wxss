@@ -1,22 +1,16 @@
-.fixed-ad{
-	position: fixed;
-	z-index: 999;
-}
+
 .nav {
-	margin-top: 10rpx;
+	margin-top: 0;
 	display: flex;
-	flex-direction: column;
-	width: 100%;
 }
 .nav-left {
-	/*display: flex;*/
-	/*flex-direction: row;*/
+	margin-top: 0;
+	width: 50%;
 	white-space: nowrap;
 	display: flex;
 }
 .nav-left-item {
 	height: 120rpx;
-	width: 25%;
 	font-size: 32rpx;
 	display: inline-block;
 	display: flex;
@@ -25,50 +19,42 @@
 	justify-content: center;
 	background-color: #e6e6e6;
 	color: #484242;
+	margin-bottom: 4rpx;
 }
 .garbage-gan {
-	width: 25%;
 	background-color: rgb(44, 43, 39);
 	color: #FFFFFF;
 }
 .garbage-shi {
-	width: 25%;
-	background-color: rgb(102, 63, 52);
+	background-color: rgb(34, 139, 34);
 	color: #FFFFFF;
 }
 .garbage-huishou {
-	width: 25%;
 	background-color: rgb(36, 71, 131);
 	color: #FFFFFF;
 }
 .garbage-youhai {
-	width: 25%;
 	background-color: rgb(229, 49, 34);
 	color: #FFFFFF;
 }
-/* boder */
 .garbage-gan-border {
-	border-top: 10rpx solid rgb(44, 43, 39);
+	border-left: 10rpx solid rgb(44, 43, 39);
 }
 .garbage-shi-border {
-	border-top: 10rpx solid rgb(102, 63, 52);
+	border-left: 10rpx solid rgb(34, 139, 34);
 }
 .garbage-huishou-border {
-	border-top: 10rpx solid rgb(36, 71, 131);
+	border-left: 10rpx solid rgb(36, 71, 131);
 }
 .garbage-youhai-border {
-	border-top: 10rpx solid rgb(229, 49, 34);
+	border-left: 10rpx solid rgb(229, 49, 34);
 }
-.main-img {
-	width: 200rpx;
-	height: 200rpx;
-}
-/* 右边 的样式 */
 .nav-right {
 	width: 100%;
 }
 .nav-right-item {
-	height: 20rpx;
+	margin-top: 0;
+	height: 10rpx;
 	padding: 28rpx;
 	font-size: 32rpx;
 	display: flex;
@@ -91,7 +77,6 @@
 .content {
 	width: 100%;
 }
-/* 右边展示的图片 */
 .view-img{
 	height: 50%;
 	display: flex;
@@ -103,7 +88,7 @@
 	width:400rpx;
 	height:500rpx;
 }
-::-webkit-scrollbar {/*取消小程序的默认导航条样式*/
+::-webkit-scrollbar {
    width: 0;
    height: 0;
    color: transparent;

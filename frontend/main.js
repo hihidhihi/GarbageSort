@@ -6,7 +6,7 @@ Vue.config.productionTip = false
 // prod 
 // Vue.prototype.serverUrl="https://felix.picp.vip/wx"
 // dev
- Vue.prototype.serverUrl="http://192.168.137.1:8899/wx"
+ Vue.prototype.serverUrl="http://localhost:8899/wx"
 
 
 

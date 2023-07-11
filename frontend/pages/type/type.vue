@@ -1,8 +1,8 @@
 <template>
 	<view class="content">
-		<view >
+		<!--<view >
 			<ad unit-id="adunit-060249bea9401e5c"></ad>
-		</view>
+		</view>-->
 		<view class="nav">
 			<view class="nav-left">
 				<scroll-view scroll-y>
@@ -39,7 +39,6 @@
 	import myPopup from "@/components/myPopup.vue"
 	import share from "@/components/share.vue"
 	import { url } from "@/global/data.js"
-
 	export default {
 		components: {
 			myPopup,

@@ -1,7 +1,7 @@
 /* 幻灯片 滑块 */
 .swiper-img {
 	width: 750upx;
-	height: 300upx;
+	height: 350upx;
 }
 
 .swiper-flex {
@@ -14,54 +14,53 @@
 	justify-content: center;
 }
 
-/* 搜索框 start */
-.tip-text {
-	text-align: center;
-	font-size: 32rpx;
-	color: #4d4d4d;
-	margin-top: 10rpx;
-
-}
-
 .input-view {
+	align-self: flex-end;
 	display: flex;
 	direction: row;
+	height: 500upx;
+	
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	margin: 10upx 20upx 20upx 20upx;
-	/* height: 80upx; */
-	border: 1px solid #72c69c;
-	border-radius: 50upx;
-	box-shadow: 10upx 10upx 20upx #c5c5c5;
+	
+	/*border: 1px solid #72c69c;*/
+	/*border-radius: 50upx;*/
+	/*box-shadow: 10upx 10upx 20upx #c5c5c5;*/
 	/* box-shadow: 10upx 10upx 12upx #888888; */
 	/* box-shadow: 0 0 30upx #888888; */
 }
 
-.input-view-camera,
-.input-view-speech,
-.input-view-search {
-	/* border: 1px solid red; */
-	/* border-radius: 20upx; */
+.input-view-speech{
+	
 }
 
-.input-view-camera {}
+.input-view-camera{
+	
+}
+
+.input-view-search {
+
+}
 
 .input-view-item {
-	height: 80upx;
-	align-items: center;
-	padding: 10upx;
+	padding: 30upx;
 }
 
-.input-search {
-	height: 80upx;
-	width: 320upx;
-	text-align:center;
+.search-img1 {
+	width: 150upx;
+	height: 150upx;
+}
+.search-img2 {
+	width: 250upx;
+	height: 250upx;
 }
 
-.search-img {
-	width: 80upx;
-	height: 80upx;
+.search-img3 {
+	width: 150upx;
+	height: 150upx;
 }
+
 
 .font-search {
 	/* border: 2px solid red; */
@@ -82,8 +81,8 @@
 }
 
 .main-img {
-	width: 200upx;
-	height: 200upx;
+	width: 150upx;
+	height: 220upx;
 	padding: 20upx;
 }
 
