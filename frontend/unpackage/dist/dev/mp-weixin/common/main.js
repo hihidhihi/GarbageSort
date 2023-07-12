@@ -17,7 +17,7 @@ _vue.default.config.productionTip = false;
 // prod 
 // Vue.prototype.serverUrl="https://felix.picp.vip/wx"
 // dev
-_vue.default.prototype.serverUrl = "http://localhost:8899/wx";
+_vue.default.prototype.serverUrl = "http://43.143.73.122:8899/wx";
 
 
 

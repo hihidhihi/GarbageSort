@@ -36,15 +36,15 @@ mybatis-plus:
 # 文件路径管理
 upload:
   image:
-#    path: /opt/myservice/filepath/image/
+    path: /data/GarbageSort/backend/filepath/image/
 #    path: /Users/luoxiang/testpath/image/    # linux or mac
-    path: E:/testpath/image/                 # windows
+#    path: E:/testpath/image/                 # windows
   record:
-#    path: /opt/myservice/filepath/record/
+    path: /data/GarbageSort/backend/filepath/record/
 #    path: /Users/luoxiang/testpath/record/   # linux or mac
-    path: E:/testpath/record/   # windows
+#    path: E:/testpath/record/   # windows
   excel:
-#    path: /opt/myservice/filepath/excel/
-    path: E:/testpath/excel/
+    path: /data/GarbageSort/backend/filepath/excel/
+#    path: E:/testpath/excel/
 
 

@@ -9240,7 +9240,7 @@ function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.url = void 0;var url = "http://localhost:8899/wx";exports.url = url;
+Object.defineProperty(exports, "__esModule", { value: true });exports.url = void 0;var url = "http://43.143.73.122:8899/wx";exports.url = url;
 
 /***/ })
 ]]);

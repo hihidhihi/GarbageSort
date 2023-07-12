@@ -1,1 +1,1 @@
-export const url = "http://localhost:8899/wx";
+export const url = "http://43.143.73.122:8899/wx";

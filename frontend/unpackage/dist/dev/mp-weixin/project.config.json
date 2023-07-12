@@ -18,8 +18,8 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.32.3",
-  "appid": "wx11660ded6d0bc968",
+  "libVersion": "",
+  "appid": "wx9fac98f73496462c",
   "projectname": "garbageSort",
   "condition": {},
   "editorSetting": {

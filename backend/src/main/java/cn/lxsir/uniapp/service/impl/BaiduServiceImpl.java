@@ -59,7 +59,7 @@ public class BaiduServiceImpl implements BaiduService {
 
     @Override
     public Map<String, Object> imageClassify(String filename) {
-        System.out.println("111222333");
+        //System.out.println("111222333");
         AipImageClassify client = new AipImageClassify(appid, apikey, secretkey);
         HashMap<String, String> options = new HashMap<>();
 //        options.put("baike_num", "5");
@@ -89,9 +89,6 @@ public class BaiduServiceImpl implements BaiduService {
          */
 
         imageClassifyService.imageHandle(filename, res, resultVo, null, null);
-        //log.info("keyword："+resultVo.getString("keyword"));
-        //log.info("results："+ questionBanks.toString());
-        //log.info("response:"+res.toString());
         Map<String, Object> map = new HashMap<>();
         map.put("results", questionBanks);
         map.put("keyword", resultVo.getString("keyword"));
@@ -129,9 +126,9 @@ public class BaiduServiceImpl implements BaiduService {
         }
         QuestionBank questionBankOne = qbService.getOne(new QueryWrapper<QuestionBank>().eq("garbage_name", speechStr));
 
-        log.error("speech 111");
+        //log.error("speech 111");
         speechClassifyService.speechHandle(fileName, speechResult, list, speechStr, questionBankOne);         //异步保存 识别结果
-        log.error("speech 222");
+        //log.error("speech 222");
 
         log.info(speechResult);
         System.out.println("---");

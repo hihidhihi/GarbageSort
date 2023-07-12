@@ -482,6 +482,7 @@ innerAudioContext.autoplay = true;var _default =
 
     },
     gotoSearch: function gotoSearch() {
+      console.log("go to search");
       uni.navigateTo({
         url: '/pages/search/search' });
 

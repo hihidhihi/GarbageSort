@@ -221,13 +221,20 @@ var _default =
   data: function data() {
     return {};
   },
-  onBackPress: function onBackPress(_ref) {var backbutton = _ref.from;
+  // onBackPress({from:backbutton}) {
 
-    uni.redirectTo({
-      url: "/pages/index/index" });
+  // 			uni.redirectTo({
+  // 				url:"/pages/index/index"
+  // 			})
+  // 			return true;
+  // 		}
+  methods: {
+    toWeb: function toWeb(url) {
+      console.log("to" + url);
+      uni.navigateTo({
+        url: url });
 
-    return true;
-  } };exports.default = _default;
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

@@ -342,6 +342,7 @@
 				});
 			},
 			gotoSearch() {
+				console.log("go to search")
 				uni.navigateTo({
 					url: '/pages/search/search',
 				});
